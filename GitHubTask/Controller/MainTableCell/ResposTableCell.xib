@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ResposTableCell" rowHeight="110" id="KGk-i7-Jjw" customClass="ResposTableCell" customModule="GitHubTask" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="109.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SL8-oM-jLU">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="109.5"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="T0t-or-72J">
+                                <rect key="frame" x="20" y="10" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="ftn-5S-oF7"/>
+                                    <constraint firstAttribute="width" constant="70" id="v8n-Xk-lXe"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repo name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLb-9j-LfS">
+                                <rect key="frame" x="110" y="10" width="94.5" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VLc-g9-USt">
+                                <rect key="frame" x="110" y="39.5" width="270" height="68"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UserName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kjU-aE-OMR">
+                                <rect key="frame" x="21" y="84" width="68.5" height="25.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VLc-g9-USt" firstAttribute="top" secondItem="hLb-9j-LfS" secondAttribute="bottom" constant="8" id="0Ph-fw-oJu"/>
+                            <constraint firstItem="hLb-9j-LfS" firstAttribute="top" secondItem="T0t-or-72J" secondAttribute="top" id="9BU-L7-w2a"/>
+                            <constraint firstItem="T0t-or-72J" firstAttribute="top" secondItem="SL8-oM-jLU" secondAttribute="top" constant="10" id="DfA-C6-5B6"/>
+                            <constraint firstItem="kjU-aE-OMR" firstAttribute="centerX" secondItem="T0t-or-72J" secondAttribute="centerX" id="NLB-25-N2X"/>
+                            <constraint firstItem="kjU-aE-OMR" firstAttribute="top" secondItem="T0t-or-72J" secondAttribute="bottom" constant="4" id="PXz-Bl-QXE"/>
+                            <constraint firstItem="T0t-or-72J" firstAttribute="leading" secondItem="SL8-oM-jLU" secondAttribute="leading" constant="20" id="SFa-mX-DRU"/>
+                            <constraint firstItem="hLb-9j-LfS" firstAttribute="leading" secondItem="T0t-or-72J" secondAttribute="trailing" constant="20" id="T5g-sX-aiZ"/>
+                            <constraint firstAttribute="trailing" secondItem="VLc-g9-USt" secondAttribute="trailing" constant="20" id="h3d-ls-SiE"/>
+                            <constraint firstItem="VLc-g9-USt" firstAttribute="leading" secondItem="hLb-9j-LfS" secondAttribute="leading" id="wZt-iH-olv"/>
+                            <constraint firstAttribute="bottom" secondItem="kjU-aE-OMR" secondAttribute="bottom" id="xs1-1L-XCm"/>
+                            <constraint firstAttribute="bottom" secondItem="VLc-g9-USt" secondAttribute="bottom" constant="2" id="y2S-Th-cCS"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="SL8-oM-jLU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="6tJ-bI-QiY"/>
+                    <constraint firstAttribute="bottom" secondItem="SL8-oM-jLU" secondAttribute="bottom" id="ek0-rm-2ji"/>
+                    <constraint firstItem="SL8-oM-jLU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="oSA-Fh-O2b"/>
+                    <constraint firstAttribute="trailing" secondItem="SL8-oM-jLU" secondAttribute="trailing" id="sDg-wM-If4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="AvaterIV" destination="T0t-or-72J" id="BWf-eJ-YGx"/>
+                <outlet property="cellView" destination="SL8-oM-jLU" id="jbN-Io-aFQ"/>
+                <outlet property="descriptionTV" destination="VLc-g9-USt" id="rTO-7j-tGs"/>
+                <outlet property="repoNameLabel" destination="hLb-9j-LfS" id="UvK-PM-lhu"/>
+                <outlet property="userNameLabel" destination="kjU-aE-OMR" id="UJ7-4W-BkC"/>
+            </connections>
+            <point key="canvasLocation" x="-7.2463768115942031" y="123.88392857142857"/>
+        </tableViewCell>
+    </objects>
+</document>
